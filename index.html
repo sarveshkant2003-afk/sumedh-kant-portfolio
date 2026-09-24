@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumedh Kant, video editor</title>
+<meta name="description" content="Sumedh Kant is a video editor in Pune, India. Longform, reels, podcast hooks and short films for brands and creators.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%23161518'/><path d='M12 9l12 7-12 7z' fill='%23FF5B2E'/></svg>">
+<script>
+  /* Theme before first paint: saved choice, else the system's. */
+  (function () {
+    document.documentElement.classList.remove('no-js');
+    var t = null;
+    try { t = localStorage.getItem('sk-theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- The chrome is an on-screen display, the kind a VCR paints over the picture. -->
+<header class="osd" data-ground="paper">
+  <div class="osd__left">
+    <a class="osd__mark" href="#top" aria-label="Sumedh Kant, back to the top">SK</a>
+    <div class="osd__menu">
+      <button class="osd__play" type="button" aria-expanded="false" aria-controls="chapters">
+        <span class="osd__glyph" aria-hidden="true">&#9654;</span>
+        <span class="osd__scene" id="osd-scene">Hello</span>
+        <span class="osd__tc" id="osd-tc" aria-hidden="true">00:00:00:00</span>
+        <span class="sr-only">Open scene menu</span>
+      </button>
+      <nav id="chapters" class="chapters" aria-label="Scenes" hidden>
+        <p class="chapters__title">Scene select</p>
+        <ul>
+          <li><a href="#top">Hello</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Edit bay</a></li>
+          <li><a href="#bin">The bin</a></li>
+          <li><a href="#offclock">Off the clock</a></li>
+          <li><a href="#hello">Say hello</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="osd__right">
+    <button class="switch" id="theme" type="button" role="switch" aria-checked="false">
+      <span class="sr-only">Night mode</span>
+      <span class="switch__day" aria-hidden="true">Day</span>
+      <span class="switch__night" aria-hidden="true">Night</span>
+    </button>
+    <a class="osd__cta" href="#hello">Say hello</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ SCENE: HELLO. A person first, in layered depth. ============ -->
+  <section id="top" class="hero" data-sc-act="pin" data-sc-span="2" data-scene="Hello" data-ground="paper">
+    <div data-sc-stage class="hero__stage">
+      <div class="hero__band" aria-hidden="true">
+        <div class="hero__plate">
+          <img class="pl pl--sky" src="assets/hero-sky.webp" srcset="assets/hero-sky.webp 1x, assets/hero-sky@2x.webp 2x" width="642" height="1092" alt="">
+          <img class="pl pl--mtn" src="assets/hero-mountains.webp" srcset="assets/hero-mountains.webp 1x, assets/hero-mountains@2x.webp 2x" width="642" height="412" alt="">
+        </div>
+        <img class="pl pl--mist" src="assets/hero-mist.webp" srcset="assets/hero-mist.webp 1x, assets/hero-mist@2x.webp 2x" width="534" height="170" alt="">
+      </div>
+      <img class="pl pl--me" src="assets/hero-sumedh.webp" srcset="assets/hero-sumedh.webp 1x, assets/hero-sumedh@2x.webp 2x" width="376" height="599"
+           alt="Sumedh Kant, arms crossed, on a hillside above Darjeeling">
+
+      <div class="hero__name">
+        <h1 class="hero__h1"><span>Sumedh</span> <span>Kant</span></h1>
+        <p class="hero__role">Video editor &middot; Pune, India</p>
+        <a class="next" href="#work">
+          <img src="assets/reel/01-9drHikG6zIc.webp" width="160" height="90" alt="">
+          <span class="next__txt"><span class="next__k">Next</span><span class="next__v">See the work</span></span>
+        </a>
+      </div>
+      <p class="hero__line">Longform, reels, podcast hooks and short films, cut for brands and creators.</p>
+      <p class="hero__beat">Hi. Pull up a chair, I&rsquo;ll show you what I&rsquo;ve been editing.</p>
+    </div>
+  </section>
+
+  <!-- ============ SCENE: ABOUT. Quiet paper, first person. ============ -->
+  <section id="about" class="about" data-scene="About" data-ground="paper">
+    <div class="sc-wrap about__grid">
+      <div class="about__intro sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 class="about__h">Hi, I&rsquo;m Sumedh.</h2>
+        <p class="about__lede">I&rsquo;m a video editor with 4+ years of experience. I like clean, modern visuals that blend creativity with tech.</p>
+        <p class="about__body">Based in Pune, I help brands and creators stand out with engaging edits and motion graphics. Cricket teams, podcasts, athletes, short films: if it needs a rhythm, I&rsquo;ll find it.</p>
+      </div>
+
+      <div class="about__tapes">
+        <h3 class="about__sub">What I cut</h3>
+        <ul class="tapes" data-sc-in data-sc-stagger="60">
+          <li><a class="tape" href="#bin" data-filter="Longform"><span class="tape__name">Longform</span><span class="tape__n">4 edits</span></a></li>
+          <li><a class="tape" href="#bin" data-filter="Reels &amp; Shorts"><span class="tape__name">Reels &amp; Shorts</span><span class="tape__n">4 edits</span></a></li>
+          <li><a class="tape" href="#bin" data-filter="Podcast hooks"><span class="tape__name">Podcast hooks</span><span class="tape__n">2 edits</span></a></li>
+          <li><a class="tape" href="#bin" data-filter="Podcasts"><span class="tape__name">Podcasts</span><span class="tape__n">6 edits</span></a></li>
+          <li><a class="tape" href="#bin" data-filter="Short films"><span class="tape__name">Short films</span><span class="tape__n">2 edits</span></a></li>
+        </ul>
+      </div>
+
+      <div class="about__clients">
+        <h3 class="about__sub">Worked with</h3>
+        <ul class="clients" data-sc-in data-sc-stagger="60">
+          <li><a href="https://www.youtube.com/@UPWarriorz" target="_blank" rel="noopener">UP Warriorz</a></li>
+          <li><a href="https://www.youtube.com/channel/UCRVmOa1t9Om_kYGvjni5scQ" target="_blank" rel="noopener">Whyfal</a></li>
+          <li><a href="https://www.instagram.com/sumedhhbilgi/" target="_blank" rel="noopener">Sumedh Bilgi</a></li>
+          <li><a href="https://www.instagram.com/hardikpandya93/" target="_blank" rel="noopener">Hardik Pandya</a></li>
+          <li><a href="https://www.youtube.com/@amuktamuk" target="_blank" rel="noopener">Amuk Tamuk</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCENE: THE EDIT BAY. The peak. Scroll is the playhead. ============ -->
+  <section id="work" class="bay" data-sc-act="pin" data-sc-span="7" data-scene="Edit bay" data-ground="bay">
+    <div data-sc-stage class="bay__stage">
+      <div class="bay__head">
+        <h2 class="bay__h">Selected edits</h2>
+        <div class="bay__right">
+          <p class="bay__meta"><span>7 clips</span><span>25 fps</span><span id="bay-dur">00:00:43:13</span></p>
+          <button class="sound" id="sound" type="button" aria-pressed="false">
+            <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="sound__label">Turn on sound</span><span class="sound__short">Sound</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="bay__view">
+        <div class="monitor" aria-hidden="true">
+          <div class="monitor__screen" id="monitor"></div>
+          <div class="leader" id="leader">
+            <div class="leader__ring"></div>
+            <span class="leader__n" id="leader-n">3</span>
+          </div>
+          <p class="monitor__tag">Program</p>
+        </div>
+
+        <aside class="insp" id="insp" aria-live="polite">
+          <div class="insp__lead" id="insp-lead">
+            <p class="insp__big">Your scroll is the playhead.</p>
+            <p class="insp__small">Seven of my edits, six seconds each, cut back to back. Scrub as slow or as fast as you like, with the sound on it follows you like tape. Or press Play and sit back.</p>
+          </div>
+          <div class="insp__clip" id="insp-clip" hidden>
+            <p class="insp__cat" id="insp-cat"></p>
+            <h3 class="insp__title" id="insp-title"></h3>
+            <dl class="insp__dl">
+              <div><dt>Channel</dt><dd id="insp-ch"></dd></div>
+              <div><dt>Full edit</dt><dd id="insp-full"></dd></div>
+              <div><dt>Cuts in this clip</dt><dd id="insp-cuts"></dd></div>
+            </dl>
+            <button class="insp__watch" id="insp-watch" type="button">Watch the full edit</button>
+          </div>
+        </aside>
+      </div>
+
+      <div class="bay__transport">
+        <span class="tc" id="bay-tc" aria-hidden="true">00:00:00:00</span>
+        <button class="play" id="bay-play" type="button" aria-pressed="false">
+          <span class="play__icon" aria-hidden="true"></span><span class="play__label">Play</span>
+        </button>
+        <span class="shuttle" id="bay-shuttle" aria-hidden="true">&#10074;&#10074; Paused</span>
+      </div>
+
+      <div class="tl" aria-hidden="true">
+        <div class="tl__heads"><span></span><span>V2</span><span>V1</span><span>A1</span></div>
+        <div class="tl__lanes" id="tl-lanes">
+          <div class="tl__track" id="tl-track">
+            <div class="tl__ruler" id="tl-ruler"></div>
+            <div class="tl__lane tl__lane--v2" id="tl-v2"></div>
+            <div class="tl__lane tl__lane--v1" id="tl-v1"></div>
+            <div class="tl__lane tl__lane--a1" id="tl-a1"></div>
+          </div>
+          <div class="tl__playhead" id="tl-ph"></div>
+        </div>
+      </div>
+
+      <!-- The same seven clips as a real list, for screen readers and for no-JS. -->
+      <ol class="reel-list" id="reel-list">
+        <!--REEL-->
+        <li><a href="https://youtu.be/9drHikG6zIc" target="_blank" rel="noopener">Our backbone, our spin unit</a>, Longform, 1:30</li>
+        <li><a href="https://youtu.be/r-Q1Ks92mcc" target="_blank" rel="noopener">Hardik Pandya</a>, Reels &amp; Shorts, 0:39</li>
+        <li><a href="https://youtu.be/GPVXWtsXNz4" target="_blank" rel="noopener">Dostcast Intro</a>, Podcast hooks, 0:58</li>
+        <li><a href="https://youtu.be/IuGhLMVHpoo" target="_blank" rel="noopener">Lewis Hamilton reel</a>, Reels &amp; Shorts, 0:23</li>
+        <li><a href="https://youtu.be/8L-rP9bIikU" target="_blank" rel="noopener">Flight (short film)</a>, Short films, 22:26</li>
+        <li><a href="https://youtu.be/KGY8ajsl39M" target="_blank" rel="noopener">WhyFal Intro</a>, Podcast hooks, 1:31</li>
+        <li><a href="https://youtu.be/BpgUO7QcD6s" target="_blank" rel="noopener">Papi (short film teaser)</a>, Short films, 1:13</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SCENE: THE BIN. Every edit, one click from playing. ============ -->
+  <section id="bin" class="bin" data-scene="The bin" data-ground="paper">
+    <div class="sc-wrap">
+      <div class="bin__head">
+        <h2 class="bin__h">The bin</h2>
+        <p class="bin__p">Every edit I&rsquo;ve published. Pick one and it plays right here.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter edits by type">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="Longform" aria-pressed="false">Longform</button>
+        <button type="button" data-filter="Reels &amp; Shorts" aria-pressed="false">Reels &amp; Shorts</button>
+        <button type="button" data-filter="Podcast hooks" aria-pressed="false">Podcast hooks</button>
+        <button type="button" data-filter="Podcasts" aria-pressed="false">Podcasts</button>
+        <button type="button" data-filter="Short films" aria-pressed="false">Short films</button>
+      </div>
+      <ul class="bin__grid" id="bin-grid">
+        <!--BIN-->
+        <li class="clip" data-cat="Longform"><a class="clip__btn" href="https://youtu.be/WluTC3GlVc8" data-yt="WluTC3GlVc8" data-title="UI/UX Importance"><span class="clip__img"><img src="assets/bin/WluTC3GlVc8.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:11</span></span><span class="clip__t" title="UI/UX Importance">UI/UX Importance</span><span class="clip__m">Longform &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Longform"><a class="clip__btn" href="https://youtu.be/9drHikG6zIc" data-yt="9drHikG6zIc" data-title="Our backbone, our spin unit"><span class="clip__img"><img src="assets/bin/9drHikG6zIc.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:30</span></span><span class="clip__t" title="Our backbone, our spin unit">Our backbone, our spin unit</span><span class="clip__m">Longform &middot; UP Warriorz</span></a></li>
+        <li class="clip" data-cat="Longform"><a class="clip__btn" href="https://youtu.be/uTW7FevdGnU" data-yt="uTW7FevdGnU" data-title="Audience shocked, Deadpool and Bulla rocked"><span class="clip__img"><img src="assets/bin/uTW7FevdGnU.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:15</span></span><span class="clip__t" title="Audience shocked, Deadpool and Bulla rocked">Audience shocked, Deadpool and Bulla rocked</span><span class="clip__m">Longform &middot; boAt</span></a></li>
+        <li class="clip" data-cat="Longform"><a class="clip__btn" href="https://youtu.be/TvIrRifZbVI" data-yt="TvIrRifZbVI" data-title="Kobe Bryant"><span class="clip__img"><img src="assets/bin/TvIrRifZbVI.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:20</span></span><span class="clip__t" title="Kobe Bryant">Kobe Bryant</span><span class="clip__m">Longform &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Reels &amp; Shorts"><a class="clip__btn" href="https://youtu.be/IuGhLMVHpoo" data-yt="IuGhLMVHpoo" data-title="Lewis Hamilton reel"><span class="clip__img"><img src="assets/bin/IuGhLMVHpoo.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:23</span></span><span class="clip__t" title="Lewis Hamilton reel">Lewis Hamilton reel</span><span class="clip__m">Reels &amp; Shorts &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Reels &amp; Shorts"><a class="clip__btn" href="https://youtu.be/r-Q1Ks92mcc" data-yt="r-Q1Ks92mcc" data-title="Hardik Pandya"><span class="clip__img"><img src="assets/bin/r-Q1Ks92mcc.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:39</span></span><span class="clip__t" title="Hardik Pandya">Hardik Pandya</span><span class="clip__m">Reels &amp; Shorts &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Reels &amp; Shorts"><a class="clip__btn" href="https://youtu.be/mKzA2loiVhs" data-yt="mKzA2loiVhs" data-title="Why UI/UX is important"><span class="clip__img"><img src="assets/bin/mKzA2loiVhs.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:45</span></span><span class="clip__t" title="Why UI/UX is important">Why UI/UX is important</span><span class="clip__m">Reels &amp; Shorts &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Reels &amp; Shorts"><a class="clip__btn" href="https://youtu.be/k0wcuRFe7lo" data-yt="k0wcuRFe7lo" data-title="Chamari reel"><span class="clip__img"><img src="assets/bin/k0wcuRFe7lo.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:28</span></span><span class="clip__t" title="Chamari reel">Chamari reel</span><span class="clip__m">Reels &amp; Shorts &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Podcast hooks"><a class="clip__btn" href="https://youtu.be/GPVXWtsXNz4" data-yt="GPVXWtsXNz4" data-title="Dostcast Intro"><span class="clip__img"><img src="assets/bin/GPVXWtsXNz4.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">0:58</span></span><span class="clip__t" title="Dostcast Intro">Dostcast Intro</span><span class="clip__m">Podcast hooks &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Podcast hooks"><a class="clip__btn" href="https://youtu.be/KGY8ajsl39M" data-yt="KGY8ajsl39M" data-title="WhyFal Intro"><span class="clip__img"><img src="assets/bin/KGY8ajsl39M.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:31</span></span><span class="clip__t" title="WhyFal Intro">WhyFal Intro</span><span class="clip__m">Podcast hooks &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/L6RTTSoJzGc" data-yt="L6RTTSoJzGc" data-title="How to Build a Second Income | Ajinkya Kulkarni | Dhan Daulat with Shardul Kadam"><span class="clip__img"><img src="assets/bin/L6RTTSoJzGc.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:00:53</span></span><span class="clip__t" title="How to Build a Second Income | Ajinkya Kulkarni | Dhan Daulat with Shardul Kadam">How to Build a Second Income | Ajinkya Kulkarni | Dhan Daulat with Shardul Kadam</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/Nklugz7dJuk" data-yt="Nklugz7dJuk" data-title="Gharchi Mansa with Omkar | EP 5 | ft. Shreya Bugde"><span class="clip__img"><img src="assets/bin/Nklugz7dJuk.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:27:03</span></span><span class="clip__t" title="Gharchi Mansa with Omkar | EP 5 | ft. Shreya Bugde">Gharchi Mansa with Omkar | EP 5 | ft. Shreya Bugde</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/9wKKaR0S018" data-yt="9wKKaR0S018" data-title="Why Money Is Never Enough? | Vishwas Thakur | Dhan Daulat with Shardul Kadam"><span class="clip__img"><img src="assets/bin/9wKKaR0S018.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">55:53</span></span><span class="clip__t" title="Why Money Is Never Enough? | Vishwas Thakur | Dhan Daulat with Shardul Kadam">Why Money Is Never Enough? | Vishwas Thakur | Dhan Daulat with Shardul Kadam</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/8dBnUXzMaXQ" data-yt="8dBnUXzMaXQ" data-title="Buy or Rent a House? | CA Abhijeet Kolapkar | Dhan Daulat with Shardul Kadam"><span class="clip__img"><img src="assets/bin/8dBnUXzMaXQ.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:23:18</span></span><span class="clip__t" title="Buy or Rent a House? | CA Abhijeet Kolapkar | Dhan Daulat with Shardul Kadam">Buy or Rent a House? | CA Abhijeet Kolapkar | Dhan Daulat with Shardul Kadam</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/Mq-LxRVON2c" data-yt="Mq-LxRVON2c" data-title="Mumbai’s Secret History Revealed | Part 2 | Bharat Gothoskar | TATS with Omkar &amp; Shardul"><span class="clip__img"><img src="assets/bin/Mq-LxRVON2c.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:06:01</span></span><span class="clip__t" title="Mumbai’s Secret History Revealed | Part 2 | Bharat Gothoskar | TATS with Omkar &amp; Shardul">Mumbai’s Secret History Revealed | Part 2 | Bharat Gothoskar | TATS with Omkar &amp; Shardul</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Podcasts"><a class="clip__btn" href="https://youtu.be/-6TRKASWx3k" data-yt="-6TRKASWx3k" data-title="Gharchi Mansa with Omkar EP 3 | ft. Mrunmayee Deshpande, Gautami Deshpande"><span class="clip__img"><img src="assets/bin/-6TRKASWx3k.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:08:43</span></span><span class="clip__t" title="Gharchi Mansa with Omkar EP 3 | ft. Mrunmayee Deshpande, Gautami Deshpande">Gharchi Mansa with Omkar EP 3 | ft. Mrunmayee Deshpande, Gautami Deshpande</span><span class="clip__m">Podcasts &middot; Amuk Tamuk</span></a></li>
+        <li class="clip" data-cat="Short films"><a class="clip__btn" href="https://youtu.be/BpgUO7QcD6s" data-yt="BpgUO7QcD6s" data-title="Papi (short film teaser)"><span class="clip__img"><img src="assets/bin/BpgUO7QcD6s.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">1:13</span></span><span class="clip__t" title="Papi (short film teaser)">Papi (short film teaser)</span><span class="clip__m">Short films &middot; Sumedh Kant</span></a></li>
+        <li class="clip" data-cat="Short films"><a class="clip__btn" href="https://youtu.be/8L-rP9bIikU" data-yt="8L-rP9bIikU" data-title="Flight (short film)"><span class="clip__img"><img src="assets/bin/8L-rP9bIikU.webp" width="720" height="405" loading="lazy" alt=""><span class="clip__dur">22:26</span></span><span class="clip__t" title="Flight (short film)">Flight (short film)</span><span class="clip__m">Short films &middot; Sumedh Kant</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SCENE: OFF THE CLOCK. A strip of film, sideways. ============ -->
+  <section id="offclock" class="film" data-sc-act="pan" data-sc-span="4.4" data-scene="Off the clock" data-ground="paper">
+    <div data-sc-stage class="film__stage">
+      <div class="film__strip">
+        <div class="film__rail" data-sc-pan="0.04">
+          <div class="film__lead">
+            <h2 class="film__h">Off the clock</h2>
+            <p class="film__p">When I&rsquo;m not editing, I&rsquo;m usually somewhere with a camera. These are mine.</p>
+          </div>
+          <figure class="frame" style="--ar:1.879"><img src="assets/photos/01_kalapokhri.webp" width="1088" height="579" loading="lazy" alt="A dark mountain kitchen with shafts of morning light falling across a man crouched by a fire"><figcaption>Kalapokhri &middot; morning light</figcaption></figure>
+          <figure class="frame" style="--ar:1.474"><img src="assets/photos/02_playground.webp" width="1132" height="768" loading="lazy" alt="A rooftop playground at night, a slide and swings lit by a string of lights, one man sitting alone"><figcaption>A rooftop playground, after dark</figcaption></figure>
+          <figure class="frame" style="--ar:1.377"><img src="assets/photos/04_cloud_field.webp" width="1088" height="790" loading="lazy" alt="A man in a yellow shirt standing on a heap of dry grass as a tall cloud glows gold behind him"><figcaption>A cloud catching the last sun</figcaption></figure>
+          <figure class="frame" style="--ar:2.040"><img src="assets/photos/03_teahouse.webp" width="1126" height="552" loading="lazy" alt="Inside a dim teahouse, glasses of tea on a table, a man in the bright doorway looking up at the sky"><figcaption>Tea, and a doorway full of daylight</figcaption></figure>
+          <figure class="frame" style="--ar:1.673"><img src="assets/photos/07_lake_sunrise.webp" width="1198" height="716" loading="lazy" alt="A still lake at sunrise under a sky of thin pink and blue cloud"><figcaption>Sunrise over the lake</figcaption></figure>
+          <figure class="frame" style="--ar:1.508"><img src="assets/photos/05_boats.webp" width="1092" height="724" loading="lazy" alt="Wooden boats pulled up on the bank of a misty lake under an orange sky"><figcaption>Boats at the water&rsquo;s edge</figcaption></figure>
+          <figure class="frame" style="--ar:1.002"><img src="assets/photos/06_darjeeling.webp" srcset="assets/photos/06_darjeeling.webp 1x, assets/photos/06_darjeeling@2x.webp 2x" width="1094" height="1092" loading="lazy" alt="Sumedh with arms crossed under a huge sky of cloud above the green hills of Darjeeling"><figcaption>Darjeeling, and a lot of sky</figcaption></figure>
+          <div class="film__end">
+            <p>More photographs on Instagram.</p>
+            <a href="https://www.instagram.com/kantastic_visuals" target="_blank" rel="noopener">@kantastic_visuals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCENE: SAY HELLO. The slate claps, and the take is yours. ============ -->
+  <section id="hello" class="close" data-sc-act="pin" data-sc-span="1.5" data-scene="Say hello" data-ground="accent">
+    <div data-sc-stage class="close__stage">
+      <div class="close__grid">
+        <div class="close__copy">
+          <h2 class="close__h">Say hello.</h2>
+          <p class="close__p">Tell me what you&rsquo;re making. Fill in the slate and it opens an email to me with the details already written.</p>
+          <ul class="direct">
+            <li>
+              <a href="mailto:work.sumedhkant@gmail.com">work.sumedhkant@gmail.com</a>
+              <button class="copy" type="button" data-copy="work.sumedhkant@gmail.com">Copy</button>
+            </li>
+            <li><a href="tel:+919404582076">+91 94045 82076</a></li>
+            <li class="direct__social">
+              <a href="https://www.instagram.com/kantastic_visuals" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.linkedin.com/in/sumedh-kant-6a77bb102/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://x.com/WorkSumedh" target="_blank" rel="noopener">X</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="slate" id="slate" action="mailto:work.sumedhkant@gmail.com" method="post" enctype="text/plain">
+          <div class="slate__sticks" aria-hidden="true">
+            <div class="slate__clap"></div>
+            <div class="slate__base"></div>
+          </div>
+          <div class="slate__board">
+            <div class="slate__row slate__row--2">
+              <label class="slate__f"><span class="slate__k">Prod.</span>
+                <input name="project" type="text" autocomplete="off" placeholder="Your project" maxlength="80"></label>
+              <div class="slate__f slate__f--fixed"><span class="slate__k">Take</span><span class="slate__v" id="slate-take">1</span></div>
+            </div>
+            <fieldset class="slate__f slate__scene">
+              <legend class="slate__k">Scene</legend>
+              <div class="chips">
+                <label><input type="radio" name="type" value="Longform" checked><span>Longform</span></label>
+                <label><input type="radio" name="type" value="Reel or Short"><span>Reel or Short</span></label>
+                <label><input type="radio" name="type" value="Podcast hook"><span>Podcast hook</span></label>
+                <label><input type="radio" name="type" value="Podcast"><span>Podcast</span></label>
+                <label><input type="radio" name="type" value="Short film"><span>Short film</span></label>
+                <label><input type="radio" name="type" value="Not sure yet"><span>Not sure yet</span></label>
+              </div>
+            </fieldset>
+            <label class="slate__f"><span class="slate__k">Director</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Your name" maxlength="80"></label>
+            <label class="slate__f"><span class="slate__k">Notes</span>
+              <textarea name="notes" rows="2" placeholder="Deadline, length, a link, anything" maxlength="600"></textarea></label>
+            <div class="slate__row slate__row--2">
+              <div class="slate__f slate__f--fixed"><span class="slate__k">Editor</span><span class="slate__v">Sumedh Kant</span></div>
+              <div class="slate__f slate__f--fixed"><span class="slate__k">Date</span><span class="slate__v" id="slate-date">&nbsp;</span></div>
+            </div>
+            <button class="slate__go" type="submit">Say hello</button>
+            <p class="slate__note" id="slate-note" role="status">Opens your email app. Nothing is sent until you press send there.</p>
+          </div>
+        </form>
+      </div>
+
+      <footer class="foot">
+        <p>&copy; 2026 Sumedh Kant. Edited in Pune.</p>
+        <a href="#top">Back to the top</a>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog class="player" id="player" aria-labelledby="player-title">
+  <div class="player__bar">
+    <p class="player__title" id="player-title">Edit</p>
+    <a class="player__yt" id="player-yt" href="#" target="_blank" rel="noopener">Open on YouTube</a>
+    <button class="player__x" type="button" id="player-x">Close</button>
+  </div>
+  <div class="player__frame" id="player-frame"></div>
+</dialog>
+
+<script src="scrollcraft.js"></script>
+<script src="data.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# source material and working files stay local
+src/
+lab/
+tools/
+node_modules/
+package.json
+package-lock.json
+BRIEF.md
+.DS_Store
